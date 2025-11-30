@@ -1,52 +1,121 @@
-# MERN Stack Capstone Project
+# 🌾 AgriConnect  
+**Connecting Kenyan Farmers Directly to Buyers — No Middlemen, No Commissions, No Hassles.**
 
-This assignment focuses on designing, developing, and deploying a comprehensive full-stack MERN application that showcases all the skills you've learned throughout the course.
+AgriConnect is a full-stack MERN marketplace that empowers farmers to sell fresh produce directly to buyers at fair prices — instantly, securely, and transparently.
 
-## Assignment Overview
+Built for Kenya. Made in Kenya. For Kenyans.
 
-You will:
-1. Plan and design a full-stack MERN application
-2. Develop a robust backend with MongoDB, Express.js, and Node.js
-3. Create an interactive frontend with React.js
-4. Implement testing across the entire application
-5. Deploy the application to production
+---
 
-## Getting Started
+## 🚀 Live Deployment  
+👉 **[Visit AgriConnect Live](https://agriconnect-git-master-james-projects-fe647a3d.vercel.app/)**
 
-1. Accept the GitHub Classroom assignment
-2. Clone the repository to your local machine
-3. Follow the instructions in the `Week8-Assignment.md` file
-4. Plan, develop, and deploy your capstone project
+---
 
-## Files Included
+## ✨ Features
 
-- `Week8-Assignment.md`: Detailed assignment instructions
+### 👨‍🌾 Farmers Can:
+- Register and manage their accounts  
+- List produce with images  
+- Set custom prices per KG  
+- Receive instant real-time notifications  
+- Manage orders in a simple dashboard  
 
-## Requirements
+### 🛒 Buyers Can:
+- Browse available farm produce  
+- View farmer profiles (name, phone, location)  
+- Place orders instantly  
+- Receive instant confirmation  
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git and GitHub account
-- Accounts on deployment platforms (Render/Vercel/Netlify/etc.)
+### ⚡ Real-Time Features
+- Live notifications using Socket.io  
+- Order status updates  
+- Fully responsive (mobile-first)  
+- Light & dark mode
 
-## Project Ideas
+---
 
-The `Week8-Assignment.md` file includes several project ideas, but you're encouraged to develop your own idea that demonstrates your skills and interests.
+## 🧰 Tech Stack
 
-## Submission
+**Frontend:** React.js · Vite · Tailwind CSS  
+**Backend:** Node.js · Express.js  
+**Database:** MongoDB  
+**Real-time:** Socket.io  
+**Image Uploads:** Multer + Local Storage  
+**Authentication:** JWT (token-based)  
+**Deployment:** Vercel + Render (compatible with Railway, Fly.io, etc.)
 
-Your project will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Commit and push your code regularly
-2. Include comprehensive documentation
-3. Deploy your application and add the live URL to your README.md
-4. Create a video demonstration and include the link in your README.md
+## 📂 Project Structure
 
-## Resources
+agriconnect/
+├── client/ # React Frontend (Vite)
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── context/
+│ │ └── api/
+│ └── public/
+│
+├── server/ # Node.js Backend
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── middleware/
+│ └── uploads/ # Product images
+│
+└── README.md
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [GitHub Classroom Guide](https://docs.github.com/en/education/manage-coursework-with-github-classroom) 
+yaml
+Copy code
+
+---
+
+## 🏃‍♂️ How to Run Locally
+
+### 1️⃣ Start the Backend  
+```bash
+cd server
+npm install
+npm run dev
+➡ Runs on http://localhost:5001
+
+2️⃣ Start the Frontend
+bash
+Copy code
+cd client
+npm install
+npm run dev
+➡ Runs on http://localhost:5173
+
+3️⃣ Open in Browser
+Visit:
+👉 http://localhost:5173
+
+🔐 Environment Variables (Backend)
+Create a .env file inside /server:
+
+env
+Copy code
+MONGO_URI=mongodb://127.0.0.1:27017/agriconnect
+JWT_SECRET=your_strong_secret_here
+PORT=5001
+🛠 Future Features (Planned)
+WhatsApp / SMS notifications
+
+M-Pesa payment integration
+
+Delivery dispatch & tracking
+
+Product ratings & reviews
+
+Verified farmer badge
+
+Admin dashboard
+
+ ❤️ Made With Love For Kenya
+This project removes middlemen and puts money directly into farmers' pockets.
+No exploitation. No commissions. Just fair and transparent trade.
+
+“When farmers win, Kenya eats better.”
